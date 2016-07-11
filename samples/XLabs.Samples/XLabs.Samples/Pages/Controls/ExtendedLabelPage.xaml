@@ -24,11 +24,18 @@
                                         HorizontalOptions="StartAndExpand"
                                         IsStrikeThrough="True"
                                         Text="Text with strikethrough 20" />
-                <controls:ExtendedLabel FontName="Open 24 Display St"
-                                        FontSize="20"
-                                        FriendlyFontName="Open 24 Display St"
-                                        HorizontalOptions="StartAndExpand"
-                                        Text="This uses 'FontName' = 'Open 24 Display St' set in XAML and 'FriendlyFontName' properties, size 20" />
+              <controls:ExtendedLabel FontName="Kristen ITC"
+                                      FontSize="20"
+                                      FriendlyFontName="Kristen ITC"
+                                      HorizontalOptions="StartAndExpand"
+                                      Text="This uses 'FontName' = 'Kristen ITC' set in XAML and 'OnPlatform' properties, size 20">
+                <controls:ExtendedLabel.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String"
+                              iOS=""
+                              Android=""
+                              WinPhone="Kristen ITC"/>
+                </controls:ExtendedLabel.FontFamily>
+              </controls:ExtendedLabel>
                 <controls:ExtendedLabel FontName="Open 24 Display St"
                                         FontSize="20"
                                         FriendlyFontName="Open 24 Display St"

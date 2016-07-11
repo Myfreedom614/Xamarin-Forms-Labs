@@ -312,6 +312,7 @@ namespace XLabs.Platform.Device
 
         private void QueryOrientation()
         {
+            if (DeviceInfo.DeviceProperties.GetInstance().DisplayInfo != null)
             switch (DeviceInfo.DeviceProperties.GetInstance().DisplayInfo.CurrentOrientation)
             {
 
